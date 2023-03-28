@@ -178,6 +178,14 @@ img {
 
 .hero {
   background-color: var(--color-grey);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images2/hero-bg\ .jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero-button {
   font-family: inherit;
@@ -232,6 +240,9 @@ img {
   max-width: 264px;
 }
 /* section 2 */
+.feature {
+  display: flex;
+}
 .resourses {
   padding-top: 0px;
   padding-bottom: 120px;
