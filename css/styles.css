@@ -240,8 +240,30 @@ img {
   max-width: 264px;
 }
 /* section 2 */
-.feature {
+.feature-icons {
+  background-color: var(--color-cloud);
+}
+.team-list {
   display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+.team-soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-iris);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.team-soc-item:hover,
+.team-soc-item:focus {
+  background-color: var(--color-ocean);
+}
+
+.team-soc-icons {
+  fill: var(--color-cloud);
 }
 .resourses {
   padding-top: 0px;
@@ -292,6 +314,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--color-slate);
   margin-top: 8px;
+  margin-bottom: 8px;
 }
 .name-table {
   padding-top: 32px;
