@@ -218,8 +218,8 @@ img {
 }
 
 .main {
-  display: flex;
   gap: 24px;
+  display: flex;
 }
 .main-title {
   font-weight: 500;
@@ -235,14 +235,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-slate);
-}
-.title-list {
   max-width: 264px;
 }
+
 /* section 2 */
-.feature-icons {
-  background-color: var(--color-cloud);
-}
+
 .team-list {
   display: flex;
   justify-content: center;
@@ -256,6 +253,7 @@ img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
+  cursor: pointer;
 }
 .team-soc-item:hover,
 .team-soc-item:focus {
@@ -276,6 +274,16 @@ img {
 .team {
   display: flex;
   gap: 24px;
+}
+.feature-container {
+  display: flex;
+  justify-content: center;
+  height: 112px;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 4px;
+
+  background-color: var(--color-cloud);
 }
 .subtitle-section {
   font-weight: 700;
@@ -330,8 +338,70 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
-/* footer */
 
+.customers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.customers-icon {
+  fill: var(--color-light-slate);
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.customers-link {
+  display: flex;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  padding: 16px 32px;
+  align-items: center;
+  justify-content: center;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--color-ocean);
+}
+.customers-link:hover .customers-icon .customers-link:focus .customers-icon {
+  fill: var(--color-ocean);
+}
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  color: var(--color-navy-blue);
+  margin-bottom: 72px;
+}
+/* footer */
+.soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-left: 120px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0.1;
+  border-radius: 50%;
+}
+.footer-soc-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--color-cloud);
+}
 .footer-text {
   font-weight: 400;
   font-size: 16px;
